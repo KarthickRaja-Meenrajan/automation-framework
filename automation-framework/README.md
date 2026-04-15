@@ -14,7 +14,7 @@ It follows **Page Object Model (POM)** design with reusable utilities, logging, 
 * Selenium 3.141.59
 * TestNG
 * Apache HttpClient (API Testing)
-* SLF4J (Logging)
+* SLF4J + Log4j2 (Logging)
 * WebDriverManager
 
 ---
@@ -34,9 +34,10 @@ com.genesys
 
 ## ▶️ How to Run
 
-1. Clone the repo
-2. Import as Maven project
-3. Run `testng.xml`
+1. Clone the repository
+2. Import as Maven project in Eclipse/IntelliJ
+3. Install dependencies (Maven will auto-download)
+4. Run testng.xml file
 
 ---
 
@@ -65,7 +66,7 @@ com.genesys
 
   * **Automation** → Bold
   * **Test** → Underline
-* Validate text in editor
+  * Validate text in editor
 
 ---
 
@@ -112,7 +113,8 @@ Failed: 0
 ## 📌 Notes
 
 * Used `PageLoadStrategy.EAGER` to handle slow-loading pages
-* Framework designed for easy scalability
+* Framework is scalable and easy to extend with new test cases
+* Logs are generated inside /logs folder (test.log)
 
 ---
 
